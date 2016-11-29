@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="public/assets/css/style.css" type="text/css" />
+		<title>Connect</title>
+	</head>
+	<body>
+
+    <video id="my-video" class="video" autoplay="autoplay" loop="loop" muted="" width="300" height="150">
+<source src="public/assets/typing.mp4" type="video/mp4" />
+  </video>
+
+
+<!-- <div class="whitesheet"> -->
+    <div class="modal-1 animate">
+      <h1 id=title> Connect.me</h1>
+       <i id=slogan>a platform to network with professional individuals</i>
+
+       <form action="action_page.php">
+
+  <div class="container">
+    <label><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required><br>
+
+    <label><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required><br>
+
+    <button type="button" class="btn btn-warning">Login</button>
+    <input type="checkbox" checked="checked"> Remember me <br>
+  </div>
+
+  <div class="container">
+    <span class="psw">Forgot <a href="#">password?</a></span>
+
+</form>
+</div>
+
+  <div class="container">
+  <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;" class="btn btn-warning" id="create">Sign Up</button>
+</div>
+
+
+
+  <div id="id01" class="modal" >
+
+    <form class="modal-content animate" class="create-update-form" action="connect/create" method="POST">
+      <div class="imgcontainer">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      </div>
+
+
+
+    <div class="row">
+
+      <div class="col-md-3" id=top>
+        <div class="container">
+          <label><b>Username</b></label>
+          <input type="text" placeholder="Enter Username" name="uname" required>
+
+          <label><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" required>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <button type="submit" class="btn btn-warning">submit</button>
+        </div>
+      </div>
+
+
+
+
+      <div class="col-md-3" id=top>
+        <div class="container">
+        <div class="form-group">
+
+          <label for="ca">Name</label><br>
+          <input type="text" id="ca" name="name"><br>
+
+
+          <label for="ca">Age</label><br>
+          <input type="text" id="ca" name="age"><br>
+
+
+          <label for="ca">company</label><br>
+          <input type="text" id="ca" name="company"><br>
+
+
+          <label for="ca">position</label><br>
+          <input type="text" id="ca" name="position"><br>
+        </div>
+        </div>
+    </div>
+
+    <div class="col-md-4" id=top>
+      <div class="container">
+    industry
+      <select data-placeholder="" class="chosen-select" id="q1" name="industry">
+      <option value=""></option>
+        <option value="technology"> Technology </option>
+        <option value="finance"> Finance </option>
+        <option value="manufacturing"> Manufacturing </option>
+        <option value="healthcare"> Healthcare</option>
+        <option value="services"> Services </option>
+      </select>
+
+      level
+      <select data-placeholder="" class="chosen-select" id="q1" name="level">
+        <option value=""></option>
+            <option value="junior"> junior </option>
+            <option value="intermediate"> intermediate </option>
+            <option value="senior"> senior </option>
+            <option value="manager"> manager </option>
+            <option value="executive"> executive </option>
+          </select>
+
+      Link to Professional Photo (Required)
+      <input type="text" name="photo" id="photo" class="form-control" required >
+      </div>
+      </div>
+
+    </div>
+
+
+    </form>
+  </div>
+
+
+  <script>
+
+  // $("#create").on('click', function(){
+  //   $('.modal-1').hide();
+  //
+  //   });
+
+  </script>
+
+<!-- </div> -->
+
+
+<!-- //login form -->
+
+
+	</body>
+</HTML>

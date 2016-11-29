@@ -1,0 +1,81 @@
+<div class="bahhhh">
+
+<i id=slogan>Connect.Me</i><br>
+
+
+<span id=profile>
+  <img src="assets/css/Nat.jpg" height="30" width"30"/>
+  <strong id=slogan>| {{name}}</strong>
+  <strong id=slogan>|   Home </strong>
+  <strong id=slogan>|   Logout</strong>
+</span>
+</div>
+
+
+
+
+<div class="row">
+<div class="col-md-10" id=top>
+<ul>
+<h6>Recommended Professionals</h6>
+
+  {{#each user}}
+    <!-- {{#unless this.rented}} -->
+
+    <div class="box">
+        <img src= "{{this.photo_url}}" height="80" width="80"/>
+        <div class="boxin">
+        FirstName: {{this.firstname}}<br>
+        LastName: {{this.lastname}}<br>
+        Age: {{this.age}}<br>
+        Company: {{this.company}}<br>
+        Position:{{this.position}}<br>
+        industry: {{this.industry}}<br>
+        level: {{this.level}}
+      </div>
+
+        <button type="submit" id="del">Connect </button>
+
+
+<!--
+        <form action="connect/update/{{this.id}}?_method=PUT" method="POST">
+          <input type="hidden" name="rented" value="true">
+          <button type="submit">rent it</button>
+        </form> -->
+
+
+        <!-- {{> connect/delete-car}}
+      </div>
+    <!-- {{/unless}} -->
+  {{/each}}
+</ul>
+</div>
+
+
+
+
+<div class="col-md-2" id=sidebar>
+<h5>My connects</h5><br>
+{{#each user}}
+
+<div class="row">
+<div class="col-md-10">
+<div class="online">
+    <img src= "{{this.photo_url}}" height="35" width="35"/>
+     {{this.firstname}}
+     {{this.lastname}}
+</div>
+</div>
+
+<div class="row">
+<div class="col-md-2">
+<div class="online">
+  <img src="assets/css/greendot.png" height="7" width"7"/>
+
+</div>
+</div>
+</div>
+
+  </div>
+    {{/each}}
+  </div>
