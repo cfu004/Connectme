@@ -2,29 +2,29 @@ var express = require('express');
 var router = express.Router();
 var models = require('../models');
 
-router.get('/connect', function (req, res) {
-    
+router.get('/connect', function(req, res) {
+
     return res.redirect('/connect');
 });
 
-router.get('/', function (req, res) {
-      return models.user.getFriender().concat(user.getFriended())
-  .then(function(user) {
-    return res.render('friends', {
-       user:user
-    });
-  });
+router.get('/', function(req, res) {
+    return models.user.getFriender().concat(user.getFriended())
+        .then(function(user) {
+            return res.render('friends', {
+                user: user
+            });
+        });
 });
 
 router.post('/create', function(req, res) {
-  
+
 
     models.connect.create({
         friender_id: req.session.id,
         friended_id: req.user.id,
         accepted: true
-        
-    }).then(function(){
+
+    }).then(function() {
         res.redirect('/');
     });
 });

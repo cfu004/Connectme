@@ -5,10 +5,7 @@ var express = require('express');
 var router = express.Router();
 var models = require('../models');
 
-// router.get('/friend', function (req, res) {
-    
-//     return res.redirect('/friend');
-// });
+
 router.get('/profile', function (req, res) {
     
     return res.redirect('/profile');
@@ -29,8 +26,7 @@ router.get('/', function (req, res) {
         })  
     })
   .then(function(users) {
-    // var candidates =[];
-    // for ()
+   
 
     return res.render('index', {
         name: req.session.name,
@@ -44,19 +40,6 @@ router.get('/', function (req, res) {
 });
 
 
-// router.post('/create', function(req, res) {
-  
-//     models.user.
-//     // models.connect.create({
-//     //     friender_id: req.session.id,
-//     //     friended_id: req.user.id,
-//     //     accepted: true
-        
-//     }).then(function(){
-       
-//         res.redirect('/');
-//     });
-// });
 
 router.post('/update/:id', function(req, res){
    
@@ -71,24 +54,7 @@ router.post('/update/:id', function(req, res){
     res.redirect("/connect");
     })
 });
-// router.put('/update/:id', function(req, res) {
-//     var condition = 'id = ' + req.params.id;
 
-//     console.log('condition', condition);
-
-//     models.user.update({
-//         firstname: req.body.firstname,
-//         lastname: req.body.lastname,
-//         age: req.body.age,
-//         company: req.body.company,
-//         position: req.body.position,
-//         industry: req.body.industry,
-//         level: req.body.level,
-//         photo_url: req.body.photo
-//     }, condition, function() {
-//         res.redirect('/');
-//     });
-// });
 
 router.delete('/delete/:id', function(req, res) {
     var condition = 'id = ' + req.params.id;

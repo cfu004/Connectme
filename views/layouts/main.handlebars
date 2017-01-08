@@ -3,34 +3,26 @@ Here is the main HTML where handlebars will render to
  -->
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-      <script src="assets/css/typed.js"></script>
-      <script>
-        $(function(){
-          $(".element").typed({
-            strings: ['"Connect."',' "Me."','"Connect.Me"'],
-            typeSpeed: 100
-          });
+    <script src="assets/css/typed.js"></script>
+    <script>
+        $(function() {
+            $(".element").typed({
+                strings: ['"Connect."', ' "Me."', '"Connect.Me"'],
+                typeSpeed: 100
+            });
         });
-      </script>
+    </script>
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/style.css" type="text/css">
     <title>Connect</title>
-  </head>
-	<body class="signuppage">
-		{{!-- <p>
-			{{#unless logged_in}}
-				<a href="/users/sign-in">Sign In</a>
-				<a href="/users/new">Sign Up</a>
-			{{/unless}}
+</head>
 
-			{{#if logged_in}}
-				Welcome {{email}}! <br>
-				You are user {{user_id}}.<br>
-				<a href="/users/sign-out">Sign Out</a>
-			{{/if}}
-		</p> --}}
-		{{{ body }}}
-	</body>
+<body class="signuppage">
+
+    {{{ body }}}
+</body>
+
 </HTML>

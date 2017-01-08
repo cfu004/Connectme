@@ -1,18 +1,9 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-	<head>
-		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-<link rel="stylesheet" href="style.css" type="text/css" />
-		<title>Connect</title>
-	</head>
-
-<body> -->
 <div class="bahhhh">
 
-<i id=slogan>Connect.Me</i><br>
+    <i id=slogan>Connect.Me</i><br>
 
 
-<span id=profile>
+    <span id=profile>
   <button id="buttonclear"><img src="{{photo}}" height="35" width="35"/></button>
   <strong id=slogan>{{name}} {{lastname}}</strong>
   <strong id=slogan>|   Home </strong>
@@ -25,71 +16,66 @@
 
 <div class="row">
 
-<div class="col-md-3" id=top>
-</div>
+    <div class="col-md-3" id=top>
+    </div>
 
 
-<div class="col-md-6" id=mypage>
-  <div id="bannerdiv">
-  </div>
+    <div class="col-md-6" id=mypage>
+        <div id="bannerdiv">
+        </div>
 
-  <div id="pic">
-  <img src="{{photo}}" height="150" width"150"/>
-</div>
+        <div id="pic">
+            <img src="{{photo}}" height="150" width "150"/>
+        </div>
 
-  <div id="name">
-    {{name}} {{lastname}}
-  </div>
-  
-
-<div id="aboutme">
-  <button type="submit" id="me">About me </button>
-  <button type="submit" id="connection">Connections </button>
-  <button type="submit" id="update">Update info</button>
-</div>
+        <div id="name">
+            {{name}} {{lastname}}
+        </div>
 
 
-<div id="wall">
+        <div id="aboutme">
+            <button type="submit" id="me">About me </button>
+            <button type="submit" id="connection">Connections </button>
+            <button type="submit" id="update">Update info</button>
+        </div>
 
-    <br>
-      <input type="text" placeholder="Share something" name="photo" id="postbar" class="form-control" required >
-      <br>
-      <button type="submit" class="btn btn-warning" id="postsubmit">submit</button>
+
+        <div id="wall">
+
+            <br>
+            <input type="text" placeholder="Share something" name="photo" id="postbar" class="form-control" required>
+            <br>
+            <button type="submit" class="btn btn-warning" id="postsubmit">submit</button>
 
 
-  <div id="feed">
-  </div>
-</div>
-</div>
+            <div id="feed">
+            </div>
+        </div>
+    </div>
 
-<div class="col-md-3" id=top>
-</div>
+    <div class="col-md-3" id=top>
+    </div>
 </div>
 
 <div class="col-md-2" id=sidebar>
-<h5>My connects</h5><br>
-{{#each user}}
+    <h5>My connects</h5><br> {{#each user}}
 
-<div class="row">
-<div class="col-md-10">
-<div class="online">
-    <img src= "{{this.photo_url}}" height="50" width="50"/>
-     {{this.firstname}} 
-     {{this.lastname}}
-</div>
-</div>
+    <div class="row">
+        <div class="col-md-10">
+            <div class="online">
+                <img src="{{this.photo_url}}" height="50" width="50" /> {{this.firstname}} {{this.lastname}}
+            </div>
+        </div>
 
-<div class="row">
-<div class="col-md-2">
-<div class="online">
-  <img src="assets/css/greendot.png" height="10" width"10"/>
+        <div class="row">
+            <div class="col-md-2">
+                <div class="online">
+                    <img src="assets/css/greendot.png" height="10" width "10"/>
 
-</div>
-</div>
-</div>
+                </div>
+            </div>
+        </div>
 
-  </div>
+    </div>
     {{/each}}
-  </div>
-<!--   </div>
-</body> -->
+</div>

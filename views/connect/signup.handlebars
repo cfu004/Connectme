@@ -1,41 +1,31 @@
-{{!-- <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-    <link rel="stylesheet" href="public/assets/css/style.css" type="text/css" />
-    <title>Connect</title>
-  </head>
- --}}
-
-      <video id="my-video" class="video" autoplay="autoplay" loop="loop" muted="" width="300" height="150">
+<video id="my-video" class="video" autoplay="autoplay" loop="loop" muted="" width="300" height="150">
 <source src="assets/typing.mp4" type="video/mp4">
   </video>
 
 
-<!-- <div class="whitesheet"> -->
-    <div class="modal-1 animate">
-      <h1 id=title> 
 
-      <span class="element"></span></h1>
-       <i id="slogan">a platform to network with professional individuals</i>
+<div class="modal-1 animate">
+    <h1 id=title>
 
-       <form action="/log_in" method="POST">
+        <span class="element"></span></h1>
+    <i id="slogan">a platform to network with professional individuals</i>
+
+    <form action="/log_in" method="POST">
         <div class="row">
-          <div class="col-md-4" id="signin">
-  <div class="container">
-    <label><b>Email</b></label>
-    <input type="text" placeholder="Enter Email" name="email" required><br>
+            <div class="col-md-4" id="signin">
+                <div class="container">
+                    <label><b>Email</b></label>
+                    <input type="text" placeholder="Enter Email" name="email" required><br>
 
-    <label><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="password" required><br>
+                    <label><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="password" required><br>
 
-    <button type="submit" class="btn btn-warning" id="butt" class="butt1">Login</button>
-    <input type="checkbox" checked="checked"> Remember me <br>
-  </div>
+                    <button type="submit" class="btn btn-warning" id="butt" class="butt1">Login</button>
+                    <input type="checkbox" checked="checked"> Remember me <br>
+                </div>
 
-  <div class="container">
-    <span class="psw">Forgot <a href="#">password?</a>
+                <div class="container">
+                    <span class="psw">Forgot <a href="#">password?</a>
     <button onclick="document.getElementById('id01').style.display='block'" class="btn btn-warning" id="buttah">Sign Up</button>
 
 
@@ -74,72 +64,72 @@
     <form class="modal-content animate" class="create-update-form" action="/register" method="POST">
       <div class="imgcontainer">
         <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-      </div>
+                </div>
 
 
 
-    <div class="row">
+                <div class="row">
 
-        <div class="col-md-3" id=signup>
-          <div class="container">
-            <label><b>Email</b></label>
-            <input type="text" placeholder="Enter Email" name="email" required>
+                    <div class="col-md-3" id=signup>
+                        <div class="container">
+                            <label><b>Email</b></label>
+                            <input type="text" placeholder="Enter Email" name="email" required>
 
-            <label><b>Password</b></label>
-            <input type="password" placeholder="Enter Password" name="password" required>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <button type="submit" class="btn btn-warning" id="butt">submit</button>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-          </div>
-        </div>
-
-
-
-
-        <div class="col-md-3">
-          <div class="container">
-          <div class="form-group">
-
-            <label for="ca">First name</label><br>
-            <input type="text" id="ca" name="firstname"><br>
-
-            <label for="ca">Last name</label><br>
-            <input type="text" id="ca" name="lastname"><br>
-
-            <label for="ca">Age</label><br>
-            <input type="text" id="ca" name="age"><br>
-
-
-            <label for="ca">company</label><br>
-            <input type="text" id="ca" name="company"><br>
+                            <label><b>Password</b></label>
+                            <input type="password" placeholder="Enter Password" name="password" required>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <button type="submit" class="btn btn-warning" id="butt">submit</button>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                        </div>
+                    </div>
 
 
 
-          </div>
-          </div>
-      </div>
 
-      <div class="col-md-4" id=top>
-        <div class="container">
+                    <div class="col-md-3">
+                        <div class="container">
+                            <div class="form-group">
 
-          Position
-          <select data-placeholder="" class="chosen-select" id="q1" name="position">
+                                <label>First name</label><br>
+                                <input type="text" id="ca" name="firstname"><br>
+
+                                <label>Last name</label><br>
+                                <input type="text" id="ca" name="lastname"><br>
+
+                                <label>Age</label><br>
+                                <input type="text" id="ca" name="age"><br>
+
+
+                                <label>company</label><br>
+                                <input type="text" id="ca" name="company"><br>
+
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4" id=top>
+                        <div class="container">
+
+                            Position
+                            <select data-placeholder="" class="chosen-select" id="q1" name="position">
           <option value=""></option>
             <option value="administration"> Administration </option>
             <option value="operations"> Operations </option>
@@ -150,11 +140,8 @@
             <option value="human resources"> Human Resources </option>
             <option value="purchasing"> Purchasing </option>
             <option value="other position"> Other position </option>
-          </select>
-
-
-      industry
-        <select data-placeholder="" class="chosen-select" id="q1" name="industry">
+          </select> industry
+                            <select data-placeholder="" class="chosen-select" id="q1" name="industry">
         <option value=""></option>
           <option value="technology"> Technology </option>
           <option value="finance"> Finance </option>
@@ -164,10 +151,8 @@
           <option value="education"> Education </option>
           <option value="arts and recreations"> Arts and Recreations </option>
           <option value="other services"> Other services </option>
-        </select>
-
-        level
-        <select data-placeholder="" class="chosen-select" id="q1" name="level">
+        </select> level
+                            <select data-placeholder="" class="chosen-select" id="q1" name="level">
           <option value=""></option>
               <option value="intern"> intern </option>
               <option value="junior"> junior </option>
@@ -175,97 +160,89 @@
               <option value="senior"> senior </option>
               <option value="manager/director"> manager/director </option>
               <option value="executive"> executive </option>
-            </select>
+            </select> Link to Professional Photo (Required)
+                            <input type="text" name="photo" id="photo" class="form-control" required>
+                        </div>
+                    </div>
 
-        Link to Professional Photo (Required)
-        <input type="text" name="photo" id="photo" class="form-control" required >
-        </div>
-        </div>
-
-      </div>
+                </div>
 
 
 
-      </form>
+    </form>
     </div>
 
-  <div id="id02" class="modal" >
+    <div id="id02" class="modal">
 
 
-      <form class="modal-content animate" class="create-update-form" action="connect/create" method="POST">
-        <div class="imgcontainer">
-          <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
-        </div>
-
-
-
-      <div class="row">
-
-        <div class="col-md-3" id=signup>
-          <div class="container">
-            <h5>  Sign in to Linkedin to allow access </h5> <br>
-            <label><b>Email</b></label>
-            <input type="text" placeholder="Enter Email" name="email" required>
-
-            <label><b>Password</b></label>
-            <input type="password" placeholder="Enter Password" name="password" required>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <button type="submit" class="btn btn-warning" id="butt">allow access</button>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-          </div>
-        </div>
+        <form class="modal-content animate" class="create-update-form" action="connect/create" method="POST">
+            <div class="imgcontainer">
+                <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+            </div>
 
 
 
+            <div class="row">
 
-        <div class="col-md-8" >
+                <div class="col-md-3" id=signup>
+                    <div class="container">
+                        <h5> Sign in to Linkedin to allow access </h5> <br>
+                        <label><b>Email</b></label>
+                        <input type="text" placeholder="Enter Email" name="email" required>
 
-<div class="linkedincontainer">
+                        <label><b>Password</b></label>
+                        <input type="password" placeholder="Enter Password" name="password" required>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <button type="submit" class="btn btn-warning" id="butt">allow access</button>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                    </div>
+                </div>
 
-<h4>Connect.Me would like to access some of your LinkedIn info:</h4>
-<br>
-<br>
-<ul>
-<h5>YOUR FULL PROFILE</h5><br>
-Full profile including experience, education, skills, and recommendations<br><br>
-<h5>YOUR EMAIL ADDRESS</h5><br>
-The primary email address you use for your LinkedIn account<br><br>
-<h5>LINK ACCOUNTS</h5><br>
-Lynda will share account and activity data with LinkedIn<br><br>
-</ul>
-</div>
-</p>
 
-</div>
 
-</div>
-  </form>
+
+                <div class="col-md-8">
+
+                    <div class="linkedincontainer">
+
+                        <h4>Connect.Me would like to access some of your LinkedIn info:</h4>
+                        <br>
+                        <br>
+                        <ul>
+                            <h5>YOUR FULL PROFILE</h5><br> Full profile including experience, education, skills, and recommendations<br><br>
+                            <h5>YOUR EMAIL ADDRESS</h5><br> The primary email address you use for your LinkedIn account<br><br>
+                            <h5>LINK ACCOUNTS</h5><br> Lynda will share account and activity data with LinkedIn<br><br>
+                        </ul>
+                    </div>
+                    </p>
+
+                </div>
+
+            </div>
+        </form>
     </div>
 
 
-</div>
+    </div>
 
 
-<div class="footer">
-  <div class="footnote">
-    <span class="note">Connect.Me &#8482; 2016</span>  <span class="note">About us</span>  <span class="note">Contact us</span> <span class="note">Copyright Policy</span>
-</div>
-
-
- 
+    <div class="footer">
+        <div class="footnote">
+            <span class="note">Connect.Me &#8482; 2016</span> <span class="note">About us</span> <span class="note">Contact us</span> <span class="note">Copyright Policy</span>
+        </div>

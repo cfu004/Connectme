@@ -4,6 +4,7 @@ Here is the O.R.M. where you write functions that takes inputs and conditions an
 var connection = require('../config/connection.js');
 
 function printQuestionMarks(num) {
+    
     var arr = [];
 
     for (var i = 0; i < num; i++) {

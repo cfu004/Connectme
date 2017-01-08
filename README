@@ -1,0 +1,9 @@
+# Group Project - Connectme
+
+- Social Media App which connects people with job professions and connect with them like Linkedin.
+- Able to search in a variety of different professions to match user current profession.
+
+The app is a Node, Express web server, and backed by MySQL database with Sequelize ORM;
+which also contains both GET and POST routes to retrieve data from database.
+We have pre-built data pool in order to simulate the of matching wide range of professionists. 
+
